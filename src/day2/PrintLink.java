@@ -12,11 +12,21 @@ public class PrintLink {
 
 
     public static void main(String[] args) {
-        int size = 10;
+        int size = 5;
         Node head = genLink(size);
         printLinkByLoop(head);
-        printLinkByRecursion(head);
-        printLinkByArray(head);
+//        printLinkByRecursion(head);
+//        printLinkByArray(head);
+
+        size = 0;
+        head = genLink(size);
+        printLinkByLoop(head);
+//        printLinkByRecursion(head);
+//        printLinkByArray(head);
+
+        printLinkByLoop(null);
+//        printLinkByRecursion(null);
+//        printLinkByArray(null);
     }
 
     static class Node {
